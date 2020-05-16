@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<article role="article" class="post">
+  <div class="post-meta">
+    <h1>{{ page.title }}</h1>
+    Last Accessed:
+    <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+  </div>
+
+  <h2> Catogories: </h2>
+  <ul style="margin: 0; margin-left: 20px">
+  {% for ctg in page.categories %}
+    <li><b>{{ctg | capitalize}}</b></li>
+  {% endfor %}
+</ul>
+  
+    
+  <!-- <p> {{page.categories | join:', '}} </p> -->
+
+  <h2> Statistics:</h2>
+  <ul style="margin: 0; margin-left: 20px">
+    <li><b>Samples:</b>  {{page.samples}}</li>
+    <li><b>Studies:</b>  {{page.studies}}</li>
+    <li><b>Patients:</b> {{page.patients}}</li>
+  </ul>
+
+  <h2>Summary:</h2>
+  <p> {{page.summary}} </p>
+
+  <h2>URL: </h2>
+  <p><a href={{page.data_url}}>{{page.data_url}}</a> </p>
+
+  <h3>
+    Tags:
+    {% for tag in page.tags %}
+    <a href="/tag/{{tag}}">#{{tag}}</a>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </h3>
+
+  <hr style="height:2px; border:none; margin: 2rem 0; background-color:#e7e9ee;">
+
+
+</article>

@@ -1,0 +1,13 @@
+title: Boston AI in Medicine
+email: contact@aim.boston
+description: >- # this means to ignore newlines until "baseurl:"
+  Open Medical Data is part of Boston AI in Medicine.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: BostonAIM
+github_username:  BostonAIM
+
+permalink: none
+
+sass:
+  style: compressed

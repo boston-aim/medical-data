@@ -1,0 +1,24 @@
+---
+layout: default
+title: Open Medical Datasets
+---
+<h1>Open Medical Datasets</h1>
+<div class="grid">
+  {% for post in site.posts %}
+  <article role="article" class="card">
+    <div class="meta">
+      <h2>
+        <a href={{ post.url }}> {{ post.title }} </a>
+      </h2>
+      <h3>
+        |
+        {% for ctg in post.categories %}{{ctg | upcase}} | {% endfor %}
+      </h3>
+      <p>
+        {{ post.summary }}
+      </p>
+      <time class="date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+    </div>
+  </article>
+  {% endfor %}
+</div>
