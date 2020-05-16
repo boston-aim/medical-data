@@ -1,3 +1,4 @@
 # Open Medical Data
-A community developed database of open medical data.
-Check [Boston AI in Medicine](http://boston-aim.github.io/open-medical-data) for more information.
+A community developed database of open medical data. Check the published website [here](http://boston-aim.github.io/open-medical-data).
+
+See [Boston AI in Medicine](http://boston-aim.github.io/) for more information.
