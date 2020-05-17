@@ -2,7 +2,7 @@ title: Boston AI in Medicine
 email: contact@aim.boston
 description: >-
   Open Medical Data is part of Boston AI in Medicine.
-baseurl: "/mdeical-data" # the subpath of your site
+baseurl: "/medical-data" # the subpath of your site
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: BostonAIM
 github_username:  boston-aim
