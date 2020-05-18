@@ -10,7 +10,7 @@ title: Tags
 <ul>
     {% for tag in tags %}
     <li>
-        <a href="/tag/{{ tag | first | slugify }}/">{{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})</a>
+        <a href="{{ site.baseurl }}/tag/{{ tag | first | slugify }}/">{{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})</a>
     </li>
 
     {% endfor %}
