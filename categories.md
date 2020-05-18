@@ -16,7 +16,7 @@ comments: false
         {% for post in site.categories[this_category] %}
           {% if post.title != null %}
             <li itemscope>
-              <a href="{{ post.url }}">{{ post.title }}</a>
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
             </li>
           {% endif %}
         {% endfor %}
